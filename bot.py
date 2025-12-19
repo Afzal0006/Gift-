@@ -42,7 +42,14 @@ async def fetch_sales():
 
 async def monitor():
     await client.start()
-    print("✅ NFT Sale Userbot started")
+
+    # 🔔 Alive message on start
+    await client.send_message(
+        OWNER_ID,
+        "💓 Alive! NFT Sale Userbot is now running."
+    )
+
+    print("✅ Bot started and alive message sent")
 
     while True:
         try:
@@ -57,7 +64,6 @@ async def monitor():
                         f"💰 Price: {price}\n"
                         f"🕒 Time: Now"
                     )
-
                     await client.send_message(OWNER_ID, msg, parse_mode="html")
 
             await asyncio.sleep(CHECK_EVERY)
@@ -65,7 +71,3 @@ async def monitor():
         except Exception as e:
             print("Error:", e)
             await asyncio.sleep(10)
-
-if __name__ == "__main__":
-    with client:
-        client.loop.run_until_complete(monitor())
