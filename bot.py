@@ -13,7 +13,7 @@ API_HASH = "717d5df262e474f88d86c537a787c98d" # your api_hash
 SESSION = "BQF2PecANAmsjfKJkBv-PwZxQvinq0a7lcJ-6KCdyu13xnl8jeDV7YR9gk20ifB2M_7H2XqqUQMH0OAab9SXzfFqepsXHARqnp8JN7Iplo_5Odzwe6n5NBCFOyVP4Y3FGSdEQ4Y8UTM3VmCxTk8Jur_h9lCIKgxtLapFiiaYwgLwKWfP6W3XfsOs33FhjTEpHI8AOmZtqO4f5aAf3_2Mi032AHXKBDuzRqioX8RcG7JjYsjt-e8qnSudSpL20USBzR1FhGsYZjUx7W9_uPB7wjNH0P_6I3zJyynGPgdqIzkBi3sdZ2gRtgk7D-63t-jMbYuXIu5OfM6IZfCior4CVvRPu79nawAAAAHwVWW1AA"  # or leave empty to login first time
 
 OWNER_ID = 6998916494  # your Telegram user id
-CHECK_EVERY = 30     # seconds
+CHECK_EVERY = 3     # seconds
 
 MARKET_URL = "https://marketapp.ws/gifts/?tab=history"
 # ==================
